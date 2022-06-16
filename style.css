@@ -1,138 +1,149 @@
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
-    background-image: url(bg-intro-desktop.png);
-    background-color: hsl(0, 100%, 74%);
-    font-size: 16px;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  background-image: url(bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-section{
-    max-width: 100%;
-    width: 50%;
+section {
+  max-width: 100%;
+  width: 50%;
 }
 
-main{
-    display: flex;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0px 160px;
+}
+
+.learn {
+  color: #fff;
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 56px;
+  margin-bottom: 25px;
+}
+
+.learn p {
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+.top-right {
+  width: 90%;
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  color: #fff;
+  padding-right: 30px;
+}
+
+p span {
+  color: rgb(189, 57, 57);
+  font-weight: 400;
+}
+
+.top-right span {
+  color: #fff;
+  font-weight: 600;
+}
+
+form {
+  width: 90%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  padding: 17px 70px;
+  margin-bottom: 18px;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+input[type="firstname"]:valid,
+  input[type="lastname"]:valid,
+  input[type="email"]:valid,
+  input[type="password"]:valid{
+      border: 1px solid hsl(0, 100%, 74%);
+  }
+
+  button {
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+form p {
+  color: rgb(116, 107, 107);
+  opacity: 0.7;
+  font-weight: 200;
+  font-size: 11px;
+}
+
+/* .error{
+    border: 2px solid hsl(0, 100%, 74%);
+} */
+
+@media (max-width: 992px) {
+  main {
+    padding: 4px 20px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 0px 160px;
-}
+    background: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+  }
 
-.learn{
-    color: #fff;
-    padding-right: 20px;
-}
-
-h1{
-    font-size: 50px;
-    line-height: 56px;
-    margin-bottom: 25px;
-}
-
-.learn p{
-    line-height: 20px;
-    opacity: 0.7;
-}
-
-.top-right{
-    width: 90%;
-    background-color :hsl(248, 32%, 49%);
-    text-align: center;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    color: #fff;
-    padding-right: 30px;
-}
-
-p span{
-    color: rgb(189, 57, 57);
-    font-weight: 400;
-}
-
-.top-right span{
-    color: #fff;
-    font-weight: 600;
-}
-
-form{
-    width: 90%;
-    background-color: #fff;
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    padding: 35px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-form > div{
+  section {
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
+    justify-content: center;
+    align-items: center;
+  }
 
-input,button{
-    padding: 17px 70px;
-    margin-bottom: 18px;
-    border: 1px solid white;
-    border-radius: 8px;
-    font-weight: 600;
-}
+  .learn {
+    text-align: center;
+    padding: 40px 0px 60px;
+  }
 
-button{
-    background-color: hsl(154, 59%, 51%);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
-}
+  form p {
+    text-align: center;
+  }
 
-form p{
-    color: rgb(116, 107, 107) ;
-    opacity: 0.7;
-    font-weight: 200;
-    font-size: 11px;
-}
+  h1 {
+    font-size: 38px;
+  }
 
-@media (max-width:992px){
-    main{
-        padding: 4px 20px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: url(bg-intro-desktop.png);
-        background-color:hsl(0, 100%, 74%) ;
-    }
-
-    section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .learn{
-        text-align: center;
-        padding: 40px 0px 60px;
-    }
-
-    form p{
-        text-align: center;
-    }
-
-    h1{
-     font-size: 38px;
-    }
-
-    .top-right{
-        padding: 15px 60px;
-    }
+  .top-right {
+    padding: 15px 60px;
+  }
 }
